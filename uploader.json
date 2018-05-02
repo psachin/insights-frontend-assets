@@ -1691,6 +1691,13 @@
             "pattern": [],
             "symbolic_name": "usr_journald_conf_d"
         },
+	{
+            "file": "/etc/vdsm/vdsm.conf",
+            "pattern": [
+		'vars',
+	    ],
+            "symbolic_name": "vdsm_conf"
+        },
         {
             "file": "/var/log/vdsm/vdsm.log",
             "pattern": [
@@ -1698,6 +1705,14 @@
                 "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
             ],
             "symbolic_name": "vdsm_log"
+        },
+	{
+            "file": "/etc/vdsm/logger.conf",
+            "pattern": [
+		'loggers',
+		'formatters'
+	    ],
+            "symbolic_name": "vdsm_logger_conf"
         },
         {
             "file": "/etc/vdsm/vdsm.id",
@@ -6882,6 +6897,38 @@
                 }
             ]
         },
+	"vdsm.conf": {
+            "docker_container": [
+                {
+                    "archive_file_name": "/insights_data/container/rootfs/etc/vdsm/vdsm.conf",
+                    "file": "{CONTAINER_MOUNT_POINT}/etc/vdsm/vdsm.conf",
+                    "pattern": [
+                        "16514': No route to host",
+                        "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                    ]
+                }
+            ],
+            "docker_image": [
+                {
+                    "archive_file_name": "/insights_data/image/rootfs/etc/vdsm/vdsm.conf",
+                    "file": "{CONTAINER_MOUNT_POINT}/etc/vdsm/vdsm.conf",
+                    "pattern": [
+                        "16514': No route to host",
+                        "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                    ]
+                }
+            ],
+            "host": [
+                {
+                    "archive_file_name": "/etc/vdsm/vdsm.conf",
+                    "file": "/etc/vdsm/vdsm.conf",
+                    "pattern": [
+                        "16514': No route to host",
+                        "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                    ]
+                }
+            ]
+        },
         "vdsm.log": {
             "docker_container": [
                 {
@@ -6907,6 +6954,38 @@
                 {
                     "archive_file_name": "/var/log/vdsm/vdsm.log",
                     "file": "/var/log/vdsm/vdsm.log",
+                    "pattern": [
+                        "16514': No route to host",
+                        "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                    ]
+                }
+            ]
+        },
+	"logger.conf": {
+            "docker_container": [
+                {
+                    "archive_file_name": "/insights_data/container/rootfs/etc/vdsm/logger.conf",
+                    "file": "{CONTAINER_MOUNT_POINT}/etc/vdsm/logger.conf",
+                    "pattern": [
+                        "16514': No route to host",
+                        "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                    ]
+                }
+            ],
+            "docker_image": [
+                {
+                    "archive_file_name": "/insights_data/image/rootfs/etc/vdsm/logger.conf",
+                    "file": "{CONTAINER_MOUNT_POINT}/etc/vdsm/logger.conf",
+                    "pattern": [
+                        "16514': No route to host",
+                        "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                    ]
+                }
+            ],
+            "host": [
+                {
+                    "archive_file_name": "/etc/vdsm/logger.conf",
+                    "file": "/etc/vdsm/logger.conf",
                     "pattern": [
                         "16514': No route to host",
                         "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
