@@ -1771,7 +1771,8 @@
             "file": "/var/log/vdsm/vdsm.log",
             "pattern": [
                 "16514': No route to host",
-                "The name org.fedoraproject.FirewallD1 was not provided by any .service files"
+                "The name org.fedoraproject.FirewallD1 was not provided by any .service files",
+		"vdsmapi"
             ],
             "symbolic_name": "vdsm_log"
         },
