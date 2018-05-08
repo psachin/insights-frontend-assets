@@ -1210,8 +1210,8 @@
                 "timeout; kill it",
                 "udev: renamed network interface",
                 "udevd",
-                "vmsvc",
-		"shm_open failed, Permission denied"
+                "Failed to get disk info",
+		   "shm_open failed, Permission denied"
             ],
             "symbolic_name": "messages"
         },
