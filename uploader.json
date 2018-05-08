@@ -1772,7 +1772,7 @@
             "pattern": [
                 "16514': No route to host",
                 "The name org.fedoraproject.FirewallD1 was not provided by any .service files",
-		"vdsmapi"
+		   "_report_inconsistency"
             ],
             "symbolic_name": "vdsm_log"
         },
