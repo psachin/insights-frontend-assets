@@ -771,6 +771,11 @@
             "symbolic_name": "systemctl_smartpdc"
         },
         {
+            "command": "/bin/systool -b scsi -v",
+            "pattern": [],
+            "symbolic_name": "systool_b_scsi_v"
+        },
+        {
             "command": "/usr/bin/teamdctl  state dump",
             "pattern": [],
             "pre_command": "iface",
